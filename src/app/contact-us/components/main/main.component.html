@@ -1,0 +1,134 @@
+<section >
+<div >
+    <div class="w-100">
+        <img src="assets/images/contact-us/dceff2ecaffeceb12f0a31994eb6ce7e.png" class="w-100 heightOfPic"  alt="image">
+    </div>
+    <div class="container my-5">
+
+  <div class="container my-5">
+
+      <div class="row d-flex justify-content-center  gx-5">
+          <div class="col-lg-6 d-flex justify-content-center">
+              <div class="w-75">
+              <div>
+                  <h2>
+                      ابقي علي
+
+                      <span>تواصل</span>
+                  </h2>
+
+                  <span class="form-required">
+                      نحن نحب أن نسمع منك. يرجى ملء هذا النموذج.
+                  </span>
+              </div>
+
+              <div class="form">
+                  <form [formGroup]="contactUs" (ngSubmit)="sendContact(contactUs)">
+                      <div class="row my-3">
+                          <div class="col-6">
+                              <label for="firstName">الاسم الاول</label>
+                              <div>
+                              <input type="text" id="firstName" formControlName="first_name" class="form-control" style="height:48px ;" placeholder="الاسم الاول">
+
+                              </div>
+                              <div class="alert alert-danger" *ngIf="contactUs.get('first_name')?.errors && contactUs.get('first_name')?.touched">
+                                <p *ngIf="contactUs.get('first_name')?.getError('required')">الاسم الاول مطلوب</p>
+                            </div>
+                          </div>
+
+                          <div class="col-6">
+                              <label for="lastName">الاسم الاخير</label>
+                             <div>
+                              <input type="text" id="lastName"  formControlName="last_name" class="form-control" style="height:48px ;" placeholder="الاسم الاخير">
+                             </div>
+                             <div class="alert alert-danger" *ngIf="contactUs.get('last_name')?.errors && contactUs.get('last_name')?.touched">
+                                <p *ngIf="contactUs.get('last_name')?.getError('required')">الاسم الاخير مطلوب</p>
+                            </div>
+                          </div>
+                      </div>
+
+                      <div class="row">
+                          <div class="col-12">
+                              <label for="Email">بريدك الالكتروني</label>
+                              <div>
+
+                                  <input type="email" id="Email" formControlName="email" class="form-control" style="height:48px ;" placeholder="بريدك الالكتروني">
+                              </div>
+
+                              <div class="alert alert-danger" *ngIf="contactUs.get('email')?.errors && contactUs.get('email')?.touched">
+                                <p *ngIf="contactUs.get('email')?.getError('required')">البريد الالكتروني مطلوب</p>
+                            </div>
+                          </div>
+                      </div>
+
+
+                      <div class="row my-3">
+                          <div class="col-12">
+                              <label for="numPhone">رقم الهاتف</label>
+                              <div>
+
+                                  <input type="number" id="numPhone" formControlName="phone" class="form-control" style="height:48px ;" >
+                              </div>
+                              <div class="alert alert-danger" *ngIf="contactUs.get('phone')?.errors && contactUs.get('phone')?.touched">
+                                <p *ngIf="contactUs.get('phone')?.getError('required')">رقم الهاتف مطلوب</p>
+                            </div>
+                          </div>
+                      </div>
+
+                      <div class="row ">
+                          <div class="col-12">
+                              <label for="message">رسالتك (اختياري)</label>
+                              <textarea  id="message" class="form-control" formControlName="message"  rows="5"></textarea>
+                          </div>
+                      </div>
+
+                      <div class="row my-3">
+                          <div class="d-flex justify-content-between align-items-center">
+                              <span>أنت توافق على سياسة الخصوصية الودية الخاصة بنا.</span>
+
+                              <input type="checkbox">
+                          </div>
+                      </div>
+
+                      <div class="row my-3">
+                          <div class="d-flex justify-content-between align-items-center">
+                             <button type="submit" class="btn btn-sendMessage form-control">Send Message</button>
+                            </div>
+                            <div class="alert alert-success text-center mt-1 " *ngIf="successMessage">
+                            <span class="">Your Message Sent Successfully</span>
+
+                            </div>
+                      </div>
+
+
+                  </form>
+              </div>
+
+                </div>
+          </div>
+            <div class="col-lg-5">
+                <div class="w-100 h-100">
+                    <div class=" d-flex justify-content-center">
+             
+
+
+                        <!-- <input id="search-box" class="controls" type="text" placeholder="Search for places"> -->
+                        <div id="map" style="height: 600px; width: 100%;"></div>
+          
+                     
+                       </div>
+                </div>
+            </div>
+              </div>
+          </div>
+       
+
+    </div>
+
+</div>
+
+
+</section>
+
+
+

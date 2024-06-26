@@ -1,0 +1,159 @@
+/* General navbar styles */
+.navbar {
+    background-color: #e8f3f1; /* اللون العام للخلفية */
+  }
+
+  .navbar-nav .nav-link {
+    color: rgba(0, 39, 118, 1) !important;
+    font-weight: 600;
+  }
+
+  /* Dropdown menu styles */
+  .custom-dropdown {
+    background-color: #ffffff; /* خلفية القائمة المنسدلة */
+    border: 1px solid #d9d9d9; /* حدود القائمة المنسدلة */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    padding: 0.5rem 0;
+    border-radius: 8px;
+    display: none;
+    position: absolute;
+  }
+
+  .custom-dropdown .dropdown-item {
+     color: rgba(0, 39, 118, 1) !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+  }
+
+  .custom-dropdown .dropdown-item:hover {
+    background-color: #d9d9d9; /* خلفية العنصر عند التحويم */
+     color: rgba(0, 39, 118, 1) !important;
+  }
+
+  /* Adjusting nav link active state */
+  .nav-link.active {
+    border-bottom: 2px solid #FF5E18; /* لون الحدود السفلى عند التفعيل */
+  }
+
+  /* Dropdown on hover */
+  .nav-item.dropdown:hover .custom-dropdown {
+    display: block;
+  }
+
+  .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+  #nav2 {
+    width: 100%;
+    transition: all 0.3s ease;
+  }
+
+  #nav2.shrink {
+    background: #090024;
+    padding: 12px 0;
+  }
+
+  .navb-desktop .navbar-brand img {
+    transition: all 0.3s ease;
+  }
+
+  .navb-desktop.shrink .navbar-brand img {
+    width: 60px; /* Adjust the size when the navbar shrinks */
+    height: 60px; /* Adjust the size when the navbar shrinks */
+  }
+
+  .extra-links {
+    transition: opacity 0.3s ease, height 0.3s ease;
+  }
+
+  .navb-desktop.shrink .extra-links {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+  }
+
+  .search {
+    position: relative;
+    width: 100%;
+    max-width: 400px; /* Adjust as needed */
+}
+
+.search .form-control {
+    width: 100%;
+    height: 36px;
+    border-radius: 8px;
+    padding-right: 40px; /* Space for the icon */
+    box-sizing: border-box;
+}
+.search .form-control::before{
+  content: "بحث";
+}
+.search i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #FF6319; /* Color of the search icon */
+}
+
+.form-control:focus {
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  border-color: #FF6319;
+  outline: 0;
+  box-shadow: 0 0 0 2px #FF6319;
+}
+  .logo {
+    width: 80px;
+    height: 80px;
+    transition: all 0.3s ease;
+  }
+
+  .navb-desktop.shrink .logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .links {
+    width: 85%;
+  }
+
+  .links a {
+     color: rgba(0, 39, 118, 1) !important;
+    font-weight: 600;
+    line-height: 20px;
+  }
+
+  .searchDiv {
+
+  }
+
+  .linkActive {
+     /* لون الحدود السفلى عند التفعيل */
+     padding: 0px 20px;
+     padding: 0px 53px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+     border-bottom: 3px solid var(--main-text-color-orange);
+  }
+
+  .test {
+    display: flex !important;
+  }
+
+  @media (max-width: 991px) {
+    .navb-desktop {
+        display: none;
+    }
+    .navb-phones {
+        display: block !important;
+    }
+  }
+
+  .myy:hover span {
+    color: #EAF3F2;
+  }

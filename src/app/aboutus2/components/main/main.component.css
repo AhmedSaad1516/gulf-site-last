@@ -1,0 +1,50 @@
+.team .my-container {
+
+    box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.08);
+
+
+    position: relative;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+  }
+.section-space
+{
+  margin-top: 64px;
+  margin-bottom: 64px;
+
+}
+
+  .my-container .logo-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    width: 100px;
+    height: 100px;
+  }
+
+  .image
+{
+    width: 640px;
+height: 400px !important;
+gap: 0px;
+border-radius: 8px;
+opacity: 0px;
+}
+
+
+
+@media (max-width:991px) {
+    .heightOfPic
+    {
+        height: 200px !important;
+    }
+}

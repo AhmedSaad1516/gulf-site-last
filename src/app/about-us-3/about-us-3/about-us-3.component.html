@@ -1,0 +1,52 @@
+<div class="home"></div>
+<div class="team section-space">
+  <div class="container my-3 py-3 my-container">
+    <img
+      class="logo-2"
+      src="assets/images/aboutus3/61a0ec062b6c48e0f243a2f0e1025323.png"
+      alt=""
+    />
+    <div class="container inner-container">
+      <div class="row first">
+        <div class="col-md-12">
+          <div class="text ">
+            <h1>
+              <span class="blue">فريق
+
+                <span class="orange">القيادة</span>
+              </span>
+
+            </h1>
+            <p>
+              لقد التزم فريق القيادة لدبنا تماما بالنجاح الخاص لشركتنا ودفع
+              روح علامتنا التجارية التي تحافظ على ادائنا في ذروتنا. السعي
+              لتحقيق الافضل هو سعينا الاساسي. وتحقيق ذلك كل يوم هو الدور
+              الذي يلعبه الجميع.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container second-container">
+        <div class="row second ">
+          <div *ngFor="let item of dataTeam" class="col-md-4 second-col">
+            <div class="img">
+              <img
+                [src]="item?.image_path"
+                alt=""
+              />
+              <div class="text" dir="ltr">
+                <div class="text-icon">
+                  <h4>{{item?.name}}</h4>
+                  <i class="fa-solid fa-arrow-up"></i>
+                </div>
+                <p>{{item?.job}}</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

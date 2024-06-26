@@ -1,0 +1,73 @@
+<div class="one">  </div>
+
+<div class="container">
+    <div class="two">
+        <div class="row ">
+            <div class="col-md-12">
+                <div class="top-two">
+                    <h2>
+                      فروعنا
+                    </h2>
+            <p>  تفضل بزيارة  فريقنا الودود في احد مكاتبنا</p>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="two-two">
+<div class="row">
+<div class="col-md-3">
+    <div class="col-two-a">
+        <h4>محطات الوقود</h4>
+    </div>
+</div>
+
+<div class="col-md-3">
+    <div class="col-two-a">
+        <label> المنطقة</label> <br>
+        <select class="box1 form-control" [(ngModel)]="selectedAreaId" (change)="onAreaChange()" >
+            <option *ngFor="let areaitem of area" [value]="areaitem.id">{{areaitem.name}}</option>
+          </select>
+
+    </div>
+</div>
+<div class="col-md-3">
+    <div class="col-two-a">
+        <label> الموقع</label> <br>
+        <select class="box1 form-control" [(ngModel)]="selectedLocationId" (change)="getLatAndLang($event)">
+            <option *ngFor="let item of locationsArea" [value]="item.lat + ',' + item.lng" >{{item.name}}</option>
+          </select>
+
+    </div>
+</div>
+
+
+<div class="col-md-3">
+    <div class="col-two-a">
+         <br>
+
+         <button class=" form-control" (click)="search()">بحث  <i class="fa-solid fa-angle-left"></i></button>
+
+    </div>
+</div>
+</div>
+
+</div>
+                </div>
+
+                <div class="col-md-12 my-5">
+                  <div class="position-relative">
+                      <div *ngIf="isLoading" class="loader-overlay">
+                          <div class="loaderMap"></div>
+                        </div>
+                      <div id="map" style="height: 400px; width: 100%; " ></div>
+                  </div>
+              </div>
+
+
+
+
+
+            </div>
+
+
+            </div>
+ </div>

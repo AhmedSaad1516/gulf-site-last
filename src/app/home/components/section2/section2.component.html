@@ -1,0 +1,48 @@
+<section class="spaceBetweensections " >
+  <div class="container">
+
+
+   <div class="team">
+
+    <div class="my-container my-3 p-3">
+          <div >
+     <h2>
+    {{'home.activitiesGulf' | translate}}
+
+     <span class="headingp2">    {{'home.activitiesGulfSpan' | translate}}</span>
+     </h2>
+   <div class="d-flex justify-content-center align-items-center">
+     <p class="info"> {{'home.activitiesGulf2' | translate}} </p>
+
+   </div>
+    </div>
+      <img class="logo-2" src="assets/images/about-us4/61a0ec062b6c48e0f243a2f0e1025323.png" alt="image" />
+
+      <owl-carousel-o [options]="customOptions">
+        <ng-template *ngFor="let item of dataaAll" carouselSlide>
+          <div class="image-container">
+            <img [src]="item?.image_path" class="image" alt="image">
+
+            <div class="layer">
+              <h2 class="h6"></h2>
+              <a class="btn">
+                <span>المزيد</span>
+              <span><i class="fa-solid fa-arrow-left"></i></span>
+              </a>
+            </div>
+          </div>
+        </ng-template>
+
+
+
+
+      </owl-carousel-o>
+    </div>
+
+
+   </div>
+
+     </div>
+
+</section>
+

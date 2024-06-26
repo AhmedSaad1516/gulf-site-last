@@ -1,0 +1,7 @@
+<a class="nav-link">
+  <span class="spans" style="padding: 0px 10px;" *ngIf="lang === 'ar'">EN</span>
+  <img *ngIf="lang === 'ar'" (click)="changeLanguage()" src="assets/icons8-united-kingdom-48.png" class="fi fi-us fis rounded-circle fs-3" alt="">
+
+  <span class="spans" style="padding: 0px 10px;" *ngIf="lang === 'en'">AR</span>
+  <img *ngIf="lang === 'en'" (click)="changeLanguage()" src="assets/icons8-saudi-arabia-48.png" class="fi fi-us fis rounded-circle fs-3" alt="">
+</a>

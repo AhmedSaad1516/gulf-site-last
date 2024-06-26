@@ -1,0 +1,89 @@
+.bg-section
+{
+
+overflow: hidden;
+position: relative;
+
+}
+.layer
+{
+position: absolute;
+top: 0;
+right: 0;
+left: 0;
+bottom: 0;
+
+}
+.heading
+{
+    color: var(--main-text-color-orange);
+font-family: Inter;
+font-size: 48px;
+font-weight: 700;
+line-height: 60px;
+letter-spacing: -0.02em;
+text-align: right;
+
+}
+.text
+{
+font-family: Inter;
+font-size: 30px;
+font-weight: bold;
+line-height: 38px;
+text-align: right;
+color: white;
+width: 800px;
+padding: 0px 20px;
+}
+.info
+{
+    width: 39% !important;
+    margin-top: 250px !important;
+
+}
+
+
+@media (max-width:1200px) {
+    .info
+    {
+        margin:  10px !important;
+        padding: 10px !important;
+
+        width: 50% !important;
+    }
+
+}
+
+
+@media (max-width:868px) {
+    .info
+    {
+      position: relative;
+      top: 295px;
+    }
+
+
+}
+@media screen and (min-width:375px)  and (max-width:667px) {
+  .info
+  {
+    position: relative;
+    top: 165px;
+          width: 100% !important;
+
+  }
+
+  .info .heading{
+    font-size: 35px !important;
+    font-weight: 700 !important;
+  }
+  .info .text{
+    font-size: 20px !important;
+    font-weight: 700 !important;
+  }
+
+  .img{
+    height: 400px !important;
+  }
+}

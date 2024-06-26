@@ -1,0 +1,119 @@
+.spaceBetweensections
+{
+    margin-bottom: 128px;
+}
+.spaceBetweenFooter
+{
+    margin-bottom: 64px;
+}
+h2
+{
+    font-family: Inter;
+font-size: 72px;
+font-weight: 700;
+line-height: 90px;
+letter-spacing: -0.02em;
+text-align: center;
+color: var(--main-text-color-blue);
+
+
+}
+
+.info
+{
+font-family: Inter;
+font-size: 18px;
+font-weight: 500;
+line-height: 28px;
+text-align: center;
+width: 40%;
+
+}
+@media screen and (min-width:375px)  and (max-width:667px) {
+  .info
+  {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: center;
+  width: 90%;
+
+  }
+}
+.image
+{
+ width: 90%;
+height: 240px;
+border-radius: 8px;
+opacity: 0px;
+}
+.w-90
+{
+    width: 90% !important;
+}
+
+.btn-more
+
+{
+    width: 176px;
+height:48px;
+padding: 12px 20px 12px 20px;
+border-radius: 8px;
+border: 1px solid var(--main-text-color-orange);
+gap: 8px;
+opacity: 0px;
+}
+
+.btn-stayInTouch
+{
+    width: 149px;
+height: 44px;
+gap: 12px;
+opacity: 0px;
+
+padding: 10px 18px 10px 18px;
+gap: 8px;
+border-radius: 8px ;
+border: 1px solid transparent;
+opacity: 0px;
+background-color: var(--main-text-color-orange);
+color: #fff;
+
+font-family: Inter;
+font-size: 16px;
+font-weight: 600;
+line-height: 24px;
+
+
+}
+
+
+.team .my-container {
+    position: relative;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+  }
+  .my-container .logo-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    width: 100px;
+    height: 100px;
+  }
+
+  .sectionBoxShadow{
+    box-shadow: 0px 1px 3px 0px rgba(16, 24, 40, 0.1);
+    border-radius: 16px;
+    padding: 32px;
+    height: 130px;
+  }

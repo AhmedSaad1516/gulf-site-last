@@ -1,0 +1,103 @@
+.image
+{
+width: 640px !important;
+height: 400px !important;
+gap: 0px;
+opacity: 0px;
+
+}
+
+.who
+{
+    font-family: Inter;
+font-size: 72px;
+font-weight: 700;
+line-height: 90px;
+letter-spacing: -0.02em;
+text-align: center;
+color: var(--main-text-color-blue);
+
+
+}
+
+
+
+.headingp2
+{
+    color: var(--main-text-color-orange);
+}
+
+.image
+{
+    width: 640px;
+height: 400px !important;
+gap: 0px;
+border-radius: 8px;
+opacity: 0px;
+}
+h3
+{
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: -0.02em;
+    color: var(--main-text-color-blue);
+
+}
+.trip
+{
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: -0.02em;
+    color: var(--main-text-color-orange);
+
+
+}
+
+.info
+{
+font-family: Inter;
+font-size: 30px;
+font-weight: 500;
+line-height: 38px;
+text-align: right;
+
+}
+.btn-more
+{
+    width: 176px;
+height: 48px;
+padding: 12px 20px 12px 20px;
+gap: 8px;
+border-radius: 8px ;
+border: 1px solid transparent;
+opacity: 0px;
+background-color: var(--main-text-color-orange);
+color: #fff;
+
+}
+.section-padding
+{
+    padding: 64px;
+    padding-bottom: 0px;
+}
+.section-space
+{
+    margin-bottom: 64px;
+}
+@media (max-width:600px) {
+    img{
+        height: 143px !important;
+    }
+}
+
+@media screen and (min-width:500px) and (max-width:750px) {
+
+  p {
+    font-size: 14px !important;
+    width: 115% !important;
+}
+}
