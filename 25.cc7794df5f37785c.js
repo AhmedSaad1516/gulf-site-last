@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgolf=self.webpackChunkgolf||[]).push([[25],{9025:(oe,Z,c)=>{c.d(Z,{Y4:()=>re});var i=c(8926);c(6814),c(5619),c(5592),c(8645),c(2572),c(4664),c(8180),c(7398),c(9773);let re=(()=>{class s{static#e=this.\u0275fac=function(t){return new(t||s)};static#t=this.\u0275mod=i.oAB({type:s});static#i=this.\u0275inj=i.cJS({})}return s})()}}]);
